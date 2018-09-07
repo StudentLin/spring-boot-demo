@@ -3,10 +3,10 @@
 server:
   port: 8079
   servlet:
-    context-path: /han
+    context-path: /
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/test
+    url:  jdbc:mysql://localhost:3306/test
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver

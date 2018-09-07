@@ -4,3 +4,15 @@ spring:
   profiles:
     active: dev
 
+
+logging:
+  file:   C:\\logback-test.log # 日志文件,绝对路径或相对路径
+  path:   C:\\ # 保存日志文件目录路径
+  # 若以上两者都配置了,那么将会以前者为准
+#    #config: # 日志配置文件,Spring Boot默认使用classpath路径下的日志配置文件,如:logback.xml
+  level:
+    indi.hanlonia.meaning.controller: debug # 配置spring web日志级别
+    indi.hanlonia.meaning.utils: error
+  pattern:
+    console: '%red(%d{yyyy-MM-dd HH:mm}) %yellow([%thread]) %highlight(%-5level) %boldMagenta(%logger) %cyan(%msg%n)'
+    file: '%d{yyyy/MM/dd HH:mm} [%thread] %-5level %logger %msg%n'
